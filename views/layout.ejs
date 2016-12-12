@@ -3,24 +3,41 @@
   <head>
     <meta charset="utf-8">
     <title>RECLAMOS</title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-    <link rel='stylesheet' type='text/css' href='/stylesheets/wide.css'   media='only screen and (min-width: 530px) and (min-device-width: 481px)'/>
-    <link rel='stylesheet' type='text/css' href='/stylesheets/smartphone.css'   media='only screen and (max-width: 480px)' />
+     <!-- Bootstrap core CSS -->
+    <link href="stylesheets/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap theme -->
+    <link href="stylesheets/bootstrap-theme.min.css" rel="stylesheet">
+    
   </head>
   <body>
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/">Avances en Computación</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="/">Inicio</a></li>
+            <li><a href="/registroReclamo">Reclamos</a></li>
+            <li><a href="#contact">Contactanos</a></li>
+            
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
 	  <div id="page_wrap">
-	  		<header class="main" id="h1">
-	  			<h2>Registro de Reclamos</h2>
-	  		</header>
-	  		<nav class="main" id="n1" role="navigation">
-				<span><a href="/">Inicio</a></span>
-				<span><a href="../registroReclamo">Registrar Reclamo</a></span>
-			</nav>
-			<section class="main" id="s1">
+	  	<!-- Main jumbotron for a primary marketing message or call to action -->
+      <div class="jumbotron">
+        <section class="main" id="s1">
 			   <%- body %>
 			</section>
-			<footer class="main" id="f1">
-				<a href="">Concatenos</a>
-			</footer>
-	  </div>
+      </div>
+
   </body>
